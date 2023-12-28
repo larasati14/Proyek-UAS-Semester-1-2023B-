@@ -1,0 +1,39 @@
+#Rain 0
+
+move()
+move()
+move()
+move()
+move()
+move()
+build_wall()
+turn_left()
+turn_left()
+move()
+move()
+move()
+move()
+move()
+build_wall()
+
+#Rain 1
+move()
+turn_left()
+turn_left()
+build_wall()
+turn_left()
+move()
+
+while not at_goal():
+    if right_is_clear():
+        turn_left()
+        turn_left()
+        turn_left()
+        build_wall()
+        turn_left()
+    elif wall_in_front():
+        turn_left()
+    elif front_is_clear():
+        move()
+    else:
+        done()
